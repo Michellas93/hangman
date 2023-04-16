@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Hangman</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="h-screen">
+      <h1 class="text-6xl text-green-400 text-center mt-54 mb-4">Hangman</h1>
+      <p class="text-2xl text-center mb-4">
+        Use the alphabet below to guess the word, or click hint to get a clue.
+      </p>
+      <div id="alphabete" class="text-2xl text-center tracking-widest mb-4">
+        <button class="btn border-2 px-2 text-stone-800 hover:border-green-400">
+          a
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          b
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          c
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          d
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          e
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          f
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          g
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          h
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          i
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          j
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          k
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          l
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          m
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          n
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          o
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          p
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          g
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          r
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          s
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          t
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          u
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          v
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          w
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          x
+        </button>
+        <button
+          class="btn border-2 px-2 text-neutral-950 hover:border-green-400"
+        >
+          x
+        </button>
+        <button class="btn border-2 px-2 text-green-400 hover:border-green-400">
+          z
+        </button>
+      </div>
+      <h2 class="text-2xl text-center">The Chosen Category Is Films</h2>
+      <div id="guess_field" class="text-center text-2xl mb-4"></div>
+      <p class="text-2xl text-center">
+        You have <span id="lives">10</span> lives
+      </p>
+      <img src="img/number1.png" class="img ml-64 mt-10" />
+    </div>
+  </body>
+</html>
