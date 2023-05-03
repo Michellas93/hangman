@@ -23,7 +23,7 @@ for (let i of allWord) {
     rightWord.push("_ ");
   }
 }
-secretWord.textContent = rightWord.join();
+secretWord.textContent = rightWord.join("");
 
 btns.forEach(function (elem) {
   elem.addEventListener("click", function () {
@@ -32,7 +32,7 @@ btns.forEach(function (elem) {
     let indexes = [];
     let currIndex = 0;
     for (let znak of allWord) {
-      if (znak.toLowerCase() == clicked.toLowerCase()) {
+      if (znak.toLowerCase() == clicked.toLowerCase().trim()) {
         indexes.push(currIndex);
       }
       // na jakem miste je to pismeno
@@ -70,10 +70,10 @@ btns.forEach(function (elem) {
       setTimeout(() => {
         alert("Prohrál si");
       }, 100);
-      // alert("Prohrál si");
-      // setTimeout(() => {
-      //   Reset();
-      // }, 2000);
+      alert("Prohrál si");
+      setTimeout(() => {
+        Reset();
+      }, 2000);
     }
   });
 });
