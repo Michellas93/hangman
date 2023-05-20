@@ -11,6 +11,8 @@ const allWords = [
   "Forrest Gump",
   "Finding Nemo",
   "The Social Network",
+  "Harry Potter",
+  "Air",
 ];
 let allWord = allWords[Math.floor(Math.random() * allWords.length)];
 console.log(allWord);
